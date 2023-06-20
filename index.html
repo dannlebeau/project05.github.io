@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+      #map {
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    
+
+    <div id="radio-container">
+
+        <input type="radio" id="radio-5m" name="radio-selector" value="5" checked>
+        <label for="radio-5m">5 metros</label>
+
+        <input type="radio" id="radio-10m" name="radio-selector" value="10">
+        <label for="radio-10m">10 metros</label>
+
+
+        <input type="radio" id="radio-15m" name="radio-selector" value="15">
+        <label for="radio-15m">15 metros</label>
+
+        <input type="radio" id="radio-20m" name="radio-selector" value="20">
+        <label for="radio-20m">20 metros</label>
+
+        <input type="radio" id="radio-25m" name="radio-selector" value="25">
+        <label for="radio-25m">25 metros</label>
+
+        <input type="radio" id="radio-30m" name="radio-selector" value="30">
+        <label for="radio-30m">30 metros</label>
+
+        <input type="radio" id="radio-35m" name="radio-selector" value="35">
+        <label for="radio-35m">35 metros</label>
+
+    </div>
+
+<style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .delete-button {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tabla de Puntos de Zonas Inseguras</h1>
+  <table id="puntos-table">
+    <tr>
+      <th>ID</th>
+      <th>Longitud</th>
+      <th>Latitud</th>
+      <th>Radio</th>
+      <th></th>
+    </tr>
+  </table>
+  <button id="export-button">Exportar GeoJSON</button>
+  <div id="buttons-container"></div>
+
+
+
+    <script src="/assests/js/script.js"></script>
+    <!--SCRIPT para guardar-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+
+  </body>
+</html>
