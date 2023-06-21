@@ -2,4 +2,4 @@
 
 Al-Idrisi Project: GIS viewer
 
-Visit: https://dannlebeau.github.io/project05.github.io/
+For more information visit the following link: https://dannlebeau.github.io/project05.github.io/
